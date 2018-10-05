@@ -1,12 +1,13 @@
 'use strict';
 var Twit = require('twit');
 var request = require('request');
+require('dotenv').config();
 
 var T = new Twit({
-	consumer_key: 'kBUm7idXXQcQ7Zbmgq8kiVizl',
-  	consumer_secret: 't2Zv0jmJemWmLWr8pU0YgYMBP1vtLVKh0vjT9DXgaInoz12PTo',
-  	access_token: '457753246-rNoN65iRFlBSOoqzfzUby5nkPyNlXzKpe7XW5xQ5',
-  	access_token_secret: 'bRZS987NfwflrJeXn1vcJVDLWYjdQgjKoQzYtyH5s1ZfN'
+	consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  	consumer_secret: process.env.TWITTER_SECRET_KEY,
+  	access_token: process.env.TWITTER_ACCESS_TOKEN,
+  	access_token_secret: process.env.TWITTER_TOKEN_SECRET,
 });
 
 const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&key=123456&format=text&lang=en';
