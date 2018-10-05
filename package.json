@@ -1,0 +1,23 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "Build a twitter bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartLisethe/twitter-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartLisethe/twitter-bot/issues"
+  },
+  "homepage": "https://github.com/smartLisethe/twitter-bot#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "twit": "^2.2.11"
+  }
+}
